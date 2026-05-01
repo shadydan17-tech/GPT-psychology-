@@ -1,10 +1,10 @@
-# 🧠 Psychology Research Assistant (IPMS)
+#  Psychology Research Assistant (IPMS)
 
 An AI-powered **Indoor Positioning Management System (IPMS)** logic layer designed for psychology research. This system utilizes **Retrieval-Augmented Generation (RAG)** to provide accurate, context-aware answers from a 70MB psychology dataset.
 
 ---
 
-## 🚀 Features
+##  Features
 *   **One-Shot Retrieval:** Uses `RetrievalQA` to eliminate infinite loops and iteration errors.
 *   **High-Level Reasoning:** Powered by **Llama 3.3 70B** via Groq for research-grade synthesis.
 *   **Cloud-Native:** Built to run in Google Colab with direct Google Drive integration for large vector databases.
@@ -12,7 +12,7 @@ An AI-powered **Indoor Positioning Management System (IPMS)** logic layer design
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 *   **Language:** Python 3.10+
 *   **LLM API:** Groq (Llama 3.3 70B / Llama 3.1 8B)
 *   **Framework:** LangChain
@@ -21,7 +21,7 @@ An AI-powered **Indoor Positioning Management System (IPMS)** logic layer design
 
 ---
 
-## 📋 Prerequisites
+##  Prerequisites
 
 Before running the project, ensure you have:
 1.  **Groq API Key:** Obtain one from [console.groq.com](https://console.groq.com/).
@@ -30,7 +30,7 @@ Before running the project, ensure you have:
 
 ---
 
-## ⚙️ Setup & Installation
+##  Setup & Installation
 
 1. **Clone the repository:**
    ```bash
