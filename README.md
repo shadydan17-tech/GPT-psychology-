@@ -14,7 +14,7 @@ An AI-powered **Indoor Positioning Management System (IPMS)** logic layer design
 
 ##  Tech Stack
 *   **Language:** Python 3.10+
-*   **LLM API:** Groq (Llama 3.3 70B / Llama 3.1 8B)
+*   **LLM API:** Groq (Llama 3.1 8B)
 *   **Framework:** LangChain
 *   **Vector Store:** FAISS
 *   **Embeddings:** HuggingFace Transformers
@@ -25,7 +25,7 @@ An AI-powered **Indoor Positioning Management System (IPMS)** logic layer design
 
 Before running the project, ensure you have:
 1.  **Groq API Key:** Obtain one from [console.groq.com](https://console.groq.com/).
-2.  **Google Drive:** A folder named `psych_vector_db` containing your `index.faiss` and `index.pkl` files.
+2.  **Google Drive:** A folder named `psych_vector_db.zip` containing your `index.faiss` and `index.pkl` files.
 3.  **Environment:** Google Colab is recommended for the Drive mounting features.
 
 ---
