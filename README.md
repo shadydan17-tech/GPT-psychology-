@@ -6,7 +6,7 @@ An AI-powered **Indoor Positioning Management System (IPMS)** logic layer design
 
 ##  Features
 *   **One-Shot Retrieval:** Uses `RetrievalQA` to eliminate infinite loops and iteration errors.
-*   **High-Level Reasoning:** Powered by **Llama 3.3 70B** via Groq for research-grade synthesis.
+*   **High-Level Reasoning:** Powered by **Llama 3.1 8B** via Groq for research-grade synthesis.
 *   **Cloud-Native:** Built to run in Google Colab with direct Google Drive integration for large vector databases.
 *   **Efficient Search:** Uses FAISS and HuggingFace `all-MiniLM-L6-v2` embeddings.
 
