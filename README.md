@@ -1,38 +1,29 @@
-#  Psychology Research Assistant (IPMS)
+# LAU Psychology AI
 
-An AI-powered **Indoor Positioning Management System (IPMS)** logic layer designed for psychology research. This system utilizes **Retrieval-Augmented Generation (RAG)** to provide accurate, context-aware answers from a 70MB psychology dataset.
+An advanced, AI that answer any questions about a person's mental issues or any issue that helps the user deal with their problems. This system utilizes a **4-Tier Architecture** to provide students and faculty with real-time academic guidance and office navigation through a stateful, human-like interface.
 
----
+##  System Features
+*   **Conversational Memory**: Utilizes `ConversationBufferMemory` to maintain dialogue context, allowing for natural follow-up questions and pronoun resolution.
+*   **Stateful RAG (Retrieval-Augmented Generation)**: Links a high-performance vector database with the **Llama 3.1 8B** model to ensure answers are grounded in verified departmental data.
+*   **High-Speed Inference**: Powered by **Groq**, delivering sub-second response times for campus users.
+*   **Professional Persona**: Custom-tuned as a witty yet professional LAU Research Assistant, capable of handling everything from simple greetings to complex academic queries.
 
-##  Features
-*   **One-Shot Retrieval:** Uses `RetrievalQA` to eliminate infinite loops and iteration errors.
-*   **High-Level Reasoning:** Powered by **Llama 3.1 8B** via Groq for research-grade synthesis.
-*   **Cloud-Native:** Built to run in Google Colab with direct Google Drive integration for large vector databases.
-*   **Efficient Search:** Uses FAISS and HuggingFace `all-MiniLM-L6-v2` embeddings.
-
----
+##  Technical Architecture
+The system is built on a modular **4-Tier Design** to ensure scalability and reliability:
+1.  **Presentation Tier**: Streamlit / Google Colab UI for user interaction.
+2.  **API/Backend Tier**: Groq Cloud integration for high-performance LLM processing.
+3.  **Logic Tier**: LangChain orchestration managing the `ConversationalRetrievalChain`, memory buffers, and retrieval logic.
+4.  **Data Tier**: Persistent FAISS Vector Store using `all-MiniLM-L6-v2` embeddings to index departmental knowledge bases.
 
 ##  Tech Stack
-*   **Language:** Python 3.10+
-*   **LLM API:** Groq (Llama 3.1 8B)
-*   **Framework:** LangChain
-*   **Vector Store:** FAISS
-*   **Embeddings:** HuggingFace Transformers
+*   **Language**: Python 3.10+
+*   **Frameworks**: LangChain, LangChain-Community, LangChain-Groq
+*   **Vector Search**: FAISS (Facebook AI Similarity Search)
+*   **Embeddings**: HuggingFace Open-Source Models
+*   **Model**: Meta Llama 3.1 8B via Groq
 
----
-
-##  Prerequisites
-
-Before running the project, ensure you have:
-1.  **Groq API Key:** Obtain one from [console.groq.com](https://console.groq.com/).
-2.  **Google Drive:** A folder named `psych_vector_db.zip` containing your `index.faiss` and `index.pkl` files.
-3.  **Environment:** Google Colab is recommended for the Drive mounting features.
-
----
-
-##  Setup & Installation
-
-1. **Clone the repository:**
+##  Installation & Usage
+1. **Clone & Install**:
    ```bash
-   git clone [https://github.com/YOUR_USERNAME/psychology-assistant-ipms.git](https://github.com/YOUR_USERNAME/psychology-assistant-ipms.git)
-   cd psychology-assistant-ipms
+   git clone [https://github.com/](https://github.com/)[Your-Username]/lau-psych-ipms.git
+   pip install langchain-groq langchain-community faiss-cpu langchain-huggingface
